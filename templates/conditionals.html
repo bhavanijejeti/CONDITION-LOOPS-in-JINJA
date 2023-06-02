@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!----  {% if a > 10 %}
+         print{{a}}
+    {% endif %}
+-->
+{% if a > b %}
+        print(a is max){{a}}
+    {% else %}
+        print(b is max){{b}}
+{% endif %}
+</body>
+<!---
+{% if a > b and a > c %}
+    print(a is max)
+{% elif b > c %}
+    print(b is max)
+{% else %}
+    print(c is max)
+{% endif %}
+</body>
+</html>
+
+{% if a > b %}
+    {%if a > c %}
+        print(a is max){{a}}
+    {% else %}
+        print(c is max)
+    {% endif %}
+{% else %}
+    {%if b > c %}
+        print(b is max)
+    {% else %}
+        print(c is max)
+    {% endif %}
+{% endif %}
+-->
